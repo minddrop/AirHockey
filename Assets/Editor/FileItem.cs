@@ -14,11 +14,6 @@ public class FileItem
     string command = unityEditorPath + " " + args;
 
     Process.Start("/bin/bash", $"-c \"{shPath} {command}\"");
-    // ProcessStartInfo procStartInfo = new System.Diagnostics.ProcessStartInfo();
-    // procStartInfo.FileName = "/bin/bash";
-    // procStartInfo.Arguments = $"-c \"{shPath} {command}\"";
-    // UnityEngine.Debug.Log(procStartInfo.Arguments);
-    // Process proc = Process.Start(procStartInfo);
     EditorApplication.Exit(0);
   }
 }
