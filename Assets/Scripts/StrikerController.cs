@@ -1,12 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class StrikerController : MonoBehaviour {
   Rigidbody rb;
-  Vector3 right;
-  Vector3 left;
   float inputHorizontal;
   float inputVertical;
   void Start() {
